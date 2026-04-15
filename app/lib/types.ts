@@ -1,5 +1,7 @@
 export type UserRole = "donor" | "ngo" | "admin";
 
+export type DonationStatus = "pending" | "accepted" | "collected" | "completed" | "cancelled";
+
 export interface User {
   id: string;
   name: string;
@@ -20,6 +22,6 @@ export interface Donation {
   pickupLocation: string;
   availability: string;
   notes?: string;
-  status: "pending" | "accepted" | "collected" | "completed" | "cancelled";
+  status: DonationStatus;
   createdAt: string;
 }

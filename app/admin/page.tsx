@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { fetchDonations, fetchUsers, updateDonation, deleteDonation, updateUser, deleteUser } from "@/app/lib/api";
-import type { Donation, User } from "@/app/lib/types";
+import type { Donation, User, DonationStatus } from "@/app/lib/types";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -46,7 +46,7 @@ export default function AdminPage() {
     load();
   }, [user]);
 
-  async function updateDonationStatus(donationId: string, status: string) {
+  async function updateDonationStatus(donationId: string, status: DonationStatus) {
     setError(null);
     try {
       await updateDonation(donationId, { status });
