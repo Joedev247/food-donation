@@ -21,6 +21,7 @@ export default function LoginPage() {
       const response = await login(email, password);
       const user = response.user as User;
       localStorage.setItem("foodbridge_session", JSON.stringify(user));
+      localStorage.setItem("token", response.token);
       if (user.role === "ngo") {
         router.push("/ngo");
       } else if (user.role === "donor") {
@@ -73,7 +74,7 @@ export default function LoginPage() {
                   className="mt-3 block w-full border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
                 />
               </div>
-              {error ? <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm text-red-700">{error}</p> : null}
+              {error ? <p className=" bg-red-50 px-4 py-3 text-sm text-red-700">{error}</p> : null}
               <button
                 type="submit"
                 disabled={loading}

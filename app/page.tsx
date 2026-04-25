@@ -138,7 +138,7 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center  bg-emerald-100 text-emerald-700">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                       <path d="M9 11.5l2 2 4-4" />
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
@@ -150,7 +150,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center  bg-emerald-100 text-emerald-700">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                       <path d="M9 11.5l2 2 4-4" />
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
@@ -162,7 +162,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center  bg-emerald-100 text-emerald-700">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                       <path d="M9 11.5l2 2 4-4" />
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
@@ -174,7 +174,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700">
+                  <span className="mt-1 inline-flex h-10 w-10 items-center justify-center  bg-emerald-100 text-emerald-700">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                       <path d="M9 11.5l2 2 4-4" />
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
@@ -221,9 +221,9 @@ export default function Home() {
                   <span className="font-semibold text-slate-950">Raised $98,000</span>
                   <span>Goal $120,000</span>
                 </div>
-                <button className="mt-6 w-full  bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
+                <Link href="/register" className="mt-6 inline-flex w-full items-center justify-center bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
                   Donate Now
-                </button>
+                </Link>
               </div>
             </div>
             <div className="overflow-hidden bg-white shadow-[0_20px_60px_-35px_rgba(15,23,42,0.25)]">
@@ -246,9 +246,9 @@ export default function Home() {
                   <span className="font-semibold text-slate-950">Raised $82,000</span>
                   <span>Goal $105,000</span>
                 </div>
-                <button className="mt-6 w-full  bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
+                <Link href="/register" className="mt-6 inline-flex w-full items-center justify-center bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
                   Donate Now
-                </button>
+                </Link>
               </div>
             </div>
             <div className="overflow-hidden bg-white shadow-[0_20px_60px_-35px_rgba(15,23,42,0.25)]">
@@ -271,9 +271,9 @@ export default function Home() {
                   <span className="font-semibold text-slate-950">Raised $81,000</span>
                   <span>Goal $115,000</span>
                 </div>
-                <button className="mt-6 w-full  bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
+                <Link href="/register" className="mt-6 inline-flex w-full items-center justify-center bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
                   Donate Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -291,21 +291,21 @@ export default function Home() {
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             <div className="border border-slate-200 bg-slate-50 p-8 text-slate-950 shadow-sm">
-              <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700 text-xl font-semibold">1</div>
+              <div className="flex h-14 w-14 items-center justify-center  bg-emerald-100 text-emerald-700 text-xl font-semibold">1</div>
               <h3 className="mt-6 text-xl font-semibold">Submit Donation</h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 Share details about your food donation, including quantity, type, and pickup location.
               </p>
             </div>
             <div className="border border-slate-200 bg-slate-50 p-8 text-slate-950 shadow-sm">
-              <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700 text-xl font-semibold">2</div>
+              <div className="flex h-14 w-14 items-center justify-center  bg-emerald-100 text-emerald-700 text-xl font-semibold">2</div>
               <h3 className="mt-6 text-xl font-semibold">Connect with NGOs</h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 Verified NGOs review your donation and request pickup support from nearby volunteers.
               </p>
             </div>
             <div className="border border-slate-200 bg-slate-50 p-8 text-slate-950 shadow-sm">
-              <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-700 text-xl font-semibold">3</div>
+              <div className="flex h-14 w-14 items-center justify-center  bg-emerald-100 text-emerald-700 text-xl font-semibold">3</div>
               <h3 className="mt-6 text-xl font-semibold">Deliver & Track</h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 Track the pickup and delivery status until the food reaches people who need it most.

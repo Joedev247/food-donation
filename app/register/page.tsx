@@ -118,7 +118,7 @@ export default function RegisterPage() {
                   type="tel"
                   value={phone}
                   onChange={(event) => setPhone(event.target.value)}
-                  className="mt-2 block w-full  border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
+                  className="mt-2 mb-3 block w-full  border border-slate-200 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
                 />
               </label>
               {role === "ngo" ? (

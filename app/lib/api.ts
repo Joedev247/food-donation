@@ -14,8 +14,8 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
   return response.json();
 }
 
-export async function login(email: string, password: string): Promise<{ user: User }> {
-  return request<{ user: User }>("/api/auth/login", {
+export async function login(email: string, password: string): Promise<{ user: User; token: string }> {
+  return request<{ user: User; token: string }>("/api/auth/login", {
     method: "POST",
     body: JSON.stringify({ email, password }),
   });
@@ -55,6 +55,7 @@ export async function fetchUsers(): Promise<{ users: User[] }> {
 
 export async function createDonation(payload: {
   donorId: string;
+  ngoId?: string;
   foodType: string;
   quantity: number;
   unit: string;

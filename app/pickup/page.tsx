@@ -40,14 +40,14 @@ export default function PickupPage() {
               <span className="inline-flex rounded-full bg-emerald-300/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-emerald-200 ring-1 ring-emerald-200/20">
                 Pickup made effortless
               </span>
-              <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+              <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
                 Fast, reliable pickup coordination for every food donation.
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-slate-200 sm:text-base">
                 Simplify donation handoffs with verified NGOs, flexible scheduling, and a real-time dashboard that keeps every pickup moving smoothly.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <a href="/donor-dashboard" className="inline-flex items-center justify-center bg-emerald-500 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-400">
+                <a href="/donor" className="inline-flex items-center justify-center bg-emerald-500 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-400">
                   Start pickup request
                 </a>
                 <a href="/contact" className="inline-flex items-center justify-center border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-semibold text-gray-300 transition hover:border-white hover:bg-white/15">
