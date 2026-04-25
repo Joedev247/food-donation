@@ -447,11 +447,10 @@ export default function DonorDashboard() {
                     <MapPin size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   </div>
                 </label>
-                <label className="space-y-3 text-sm font-medium text-slate-300 sm:col-span-2">
+                <label className="space-y-3 text-sm font-medium text-slate-300">
                   Availability *
                   <div className="relative">
-                    <input type="text" value={form.availability} onChange={(event) => setForm((prev) => ({ ...prev, availability: event.target.value }))} className="mt-2 block w-full  border border-slate-600 bg-slate-800 px-4 py-3 pr-10 text-base text-white outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition" placeholder="e.g., Mon-Fri 9AM-5PM" />
-                    <Calendar size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                    <input type="datetime-local" value={form.availability} onChange={(event) => setForm((prev) => ({ ...prev, availability: event.target.value }))} className="mt-2 block w-full  border border-slate-600 bg-slate-800 px-4 py-3 pr-10 text-base text-white outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 transition" />
                   </div>
                 </label>
                 <label className="space-y-3 text-sm font-medium text-slate-300 sm:col-span-2">

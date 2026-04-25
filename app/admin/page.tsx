@@ -127,7 +127,7 @@ export default function AdminPage() {
               <span className="inline-flex rounded-full bg-emerald-300/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-emerald-200 ring-1 ring-emerald-200/20">
                 Admin dashboard
               </span>
-              <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl">
+              <h1 className="text-1xl font-semibold tracking-tight text-white sm:text-2xl lg:text-3xl">
                 Welcome back, {user?.name}.
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-slate-200 sm:text-base">

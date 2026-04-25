@@ -35,4 +35,14 @@ textarea {
   font: inherit;
 }
 
+/* Style the datetime-local calendar picker icon */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  color: white;
+  filter: invert(1);
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 
